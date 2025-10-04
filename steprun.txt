@@ -1,0 +1,19 @@
+pip install requests
+
+## ขั้นตอนที่ 2: การเตรียมไฟล์ (File Preparation)
+
+1.  สร้างโฟลเดอร์ใหม่ (เช่น `API_TESTER_PROJECT`).
+2.  บันทึกโค้ดข้างต้นทั้งหมดลงในโฟลเดอร์นั้น โดยตั้งชื่อไฟล์ให้ตรงกับที่ระบุ: `main_app.py`, `http_sender.py`, และ `config.ini`.
+3.  **สร้างไฟล์ `linkgame.txt`** ในโฟลเดอร์เดียวกัน และใส่ URL ที่คุณต้องการทดสอบ (เช่น URL เกม) ในแต่ละบรรทัด (ถ้ามีหลาย URL):
+
+    
+http://googleusercontent.com/immersive_entry_chip/3
+
+## ขั้นตอนที่ 3: การรัน (Execution)
+
+เปิด Command Prompt (CMD) หรือ Terminal แล้วย้ายเข้าไปในโฟลเดอร์โปรเจกต์ จากนั้นรันไฟล์หลัก:
+
+```bash
+python main_app.py
+
+หน้าต่าง GUI ของ **API Tester** ก็จะปรากฏขึ้น พร้อมโหลด URL จากไฟล์ `linkgame.txt` เข้าสู่แท็บ "ลำดับ 1" โดยอัตโนมัติครับ!
