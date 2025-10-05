@@ -1,26 +1,19 @@
-# Python
-__pycache__/
-*.py[cod]
+.__pycache__/
+*.pyc
 *.pyo
 *.pyd
-*.log
-.env
-.env.*
+env/
 .venv/
 venv/
-ENV/
-
-# SQLite and outputs
-*.db
-*.sqlite3
-combined_output.json
-
-# IDEs and editors
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# OS
+dist/
+build/
+*.egg-info/
+*.spec
+*.log
+backups/
+audit.log
+sqlite_suite-user.zip
+sqlite_suite-dev.zip
 .DS_Store
-Thumbs.db
+.idea/
+.vscode/
