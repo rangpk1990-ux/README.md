@@ -1,0 +1,28 @@
+sqlite_suite/
+├── README.md
+├── requirements.txt
+├── db_config.json
+├── egg_records.db
+├── .gitignore
+├── build_exe.bat
+├── build_exe.sh
+├── pyinstaller.spec
+├── samples/
+│   └── sample_seed.py
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── backup.py
+│   ├── alert.py
+│   ├── replay.py
+│   ├── audit.py
+│   └── config_manager.py
+├── ui/
+│   └── dashboard.html
+└── dist/
+    └── sqlite_suite/
+        ├── sqlite_suite.exe
+        ├── egg_records.db
+        ├── db_config.json
+        └── ui/
+            └── dashboard.html
