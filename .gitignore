@@ -1,8 +1,26 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-.env
-.vscode/
 *.log
+.env
+.env.*
+.venv/
+venv/
+ENV/
+
+# SQLite and outputs
+*.db
+*.sqlite3
 combined_output.json
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
