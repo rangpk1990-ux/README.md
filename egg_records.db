@@ -1,0 +1,26 @@
+from pathlib import Path
+import sqlite3
+
+def initialize_database():
+    # ระบุตำแหน่งไฟล์ให้แน่ใจว่าอยู่ใน src/
+    db_path = Path(__file__).parent / "egg_records.db"
+    
+    # เชื่อมต่อ SQLite (ถ้าไฟล์ยังไม่มีก็จะถูกสร้าง)
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # ตัวอย่างการสร้างตารางถ้าว่างเปล่า
+    cursor.execute('''
+    CREATE TABLE IF NOT EXISTS eggs (
+        id INTEGER PRIMARY KEY,
+        collected_at TEXT,
+        batch_id TEXT
+    )
+    ''')
+
+    conn.commit()
+    conn.close()
+    print(f"SQLite database initialized at: {db_path}")
+
+if __name__ == "__main__":
+    initialize_database()
