@@ -1,14 +1,23 @@
 # README.md
+
 # wap-mha-yea-matt-repo
 
-Simple example: two independent "egg collector" components that produce JSON records, and one aggregator that collects their outputs and writes a combined result.
+Modular egg collection system with multiple collectors and a unified aggregator. Supports JSON output and SQLite database storage.
 
-How to run (from repo root):
-1. cd src
-2. python run_collectors.py
+## Components
 
-What each file does:
-- collector_a.py: simulates Collector A, writes JSON to stdout
-- collector_b.py: simulates Collector B, writes JSON to stdout
-- aggregator.py: imports collectors, runs them (concurrently), normalizes and writes combined JSON to combined_output.json
-- run_collectors.py: entrypoint that runs aggregator and prints result
+- `collector_a.py` — simulates egg collection from source A
+- `collector_b.py` — simulates egg collection from source B
+- `aggregator.py` — normalizes, deduplicates, and stores results in SQLite
+- `run_collectors.py` — entrypoint script
+- `config.ini` — runtime configuration (database path, batch sizes)
+
+## Quick start
+
+1. Clone the repository.
+2. cd to the repo root.
+3. Ensure Python 3.8+ is installed.
+4. Run:
+```bash
+cd src
+python run_collectors.py
