@@ -1,7 +1,0 @@
-Flask>=2.0
-click>=8.0
-sqlite-utils>=3.20
-pyinstaller>=5.0
-nuitka>=1.8
-ordered-set>=4.0
-zstandard>=0.21.0
